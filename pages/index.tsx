@@ -17,7 +17,7 @@ const App: NextPage = () => {
     <>
       <NextSeo
         {...defaultSEO}
-        title={'ismywalletpwned'}
+        title={'is my wallet owned?'}
         description={'Is your crypto wallet safu or have you given access to people and contracts you should not have?'}
       />
       <DashboardWrapper />

@@ -2,10 +2,10 @@
 export const defaultSEO = {
   // title + description are included through next-translate
   openGraph: {
-    url: 'https://revoke.cash/',
+    url: 'https://ismywalletsafu.vercel.app/',
     images: [
       {
-        url: 'https://revoke.cash/assets/images/revoke-card.png',
+        url: 'https://ismywalletsafu.vercel.app/assets/images/revoke-card.png',
         width: 1600,
         height: 900,
       },
@@ -14,8 +14,8 @@ export const defaultSEO = {
     type: 'website',
   },
   twitter: {
-    handle: '@RoscoKalis',
-    site: '@RevokeCash',
+    handle: '@elonsdev',
+    site: '@elonsdev',
     cardType: 'summary_large_image',
   },
   additionalLinkTags: [
