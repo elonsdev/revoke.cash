@@ -6,7 +6,7 @@ interface Props {
 
 const Heading = ({ text, type, center }: Props) => {
   const style = {
-    color: 'black',
+    color: 'white',
     textTransform: 'uppercase',
     fontFamily: 'Futura Condensed',
     fontWeight: 'bold',

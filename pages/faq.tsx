@@ -23,10 +23,15 @@ const Faq: NextPage = () => {
           maxWidth: '800px',
           margin: 'auto',
         }}
+        className="pt-12"
       >
+        <Link href="./">
+          <a className="bg-green-500 mb-8 text-center rounded w-[200px] mx-auto py-2 text-black">BACK TO HOME</a>
+        </Link>
+
         <Heading text={t('faq:title')} type="h2" center />
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.whole_wallet_at_risk.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.whole_wallet_at_risk.answer"
@@ -34,7 +39,7 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.enough_to_disconnect.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.enough_to_disconnect.answer"
@@ -42,7 +47,7 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.hardware_wallets.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.hardware_wallets.answer"
@@ -50,7 +55,7 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.multiple_allowances.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.multiple_allowances.answer"
@@ -58,17 +63,17 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.costs.question')} type="h4" />
           <Trans i18nKey="faq:questions.costs.answer" components={[<a href="https://gashawk.io" target="_blank" />]} />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.wallet_mentions_approve.question')} type="h4" />
           <Trans i18nKey="faq:questions.wallet_mentions_approve.answer" />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.recover_assets.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.recover_assets.answer"
@@ -76,22 +81,22 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.stolen_through_allowances.question')} type="h4" />
           <Trans i18nKey="faq:questions.stolen_through_allowances.answer" />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.sweeper_bot.question')} type="h4" />
           <Trans i18nKey="faq:questions.sweeper_bot.answer" />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.which_allowances.question')} type="h4" />
           <Trans i18nKey="faq:questions.which_allowances.answer" />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.which_chains.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.which_chains.answer"
@@ -105,7 +110,7 @@ const Faq: NextPage = () => {
           />
         </div>
 
-        <div>
+        <div className="mt-8">
           <Heading text={t('faq:questions.other_question.question')} type="h4" />
           <Trans
             i18nKey="faq:questions.other_question.answer"

@@ -2,15 +2,15 @@
   "sections": {
     "credits": {
       "heading": "Credits",
-      "paragraph_1": "Revoke.cash was created by <0>Rosco Kalis</0> in 2019, and since then it has grown to be a staple in web3 security. For the Ethereum chain and several other chains allowance data is retrieved directly from the blockchain. For most other chains a combination of <1>Etherscan</1> and <2>Covalent</2> APIs are used."
+      "paragraph_1": "ismywalletsafu was created by ElonsDev as a fork of Revoke.Cash in order to make the UX better. Revoke.Cash was originaly built by, <0>Rosco Kalis</0> in 2019, and since then it has grown to be a staple in web3 security. For the Ethereum chain and several other chains allowance data is retrieved directly from the blockchain. For most other chains a combination of <1>Etherscan</1> and <2>Covalent</2> APIs are used."
     },
     "read_more": {
       "heading": "Read more",
-      "paragraph_1": "To read about Ethereum token allowances in more depth, make sure to read the article <0>Unlimited ERC20 allowances considered harmful</0>. Also check out the <1>FAQ</1> for a quick overview of the most frequently asked questions about allowances and Revoke.cash."
+      "paragraph_1": "To read about Ethereum token allowances in more depth, make sure to read the article <0>Unlimited ERC20 allowances considered harmful</0>. Also check out the <1>FAQ</1> for a quick overview of the most frequently asked questions about allowances and ismywalletsafu."
     },
     "revoke_cash": {
-      "heading": "Revoke.cash",
-      "paragraph_1": "Revoke.cash comes in as a preventative tool to manage your token allowances and practice proper wallet hygiene. By regularly revoking active allowances you reduce the chances of becoming the victim of allowance exploits."
+      "heading": "ismywalletsafu",
+      "paragraph_1": "ismywalletsafu comes in as a preventative tool to manage your token allowances and practice proper wallet hygiene. By regularly revoking active allowances you reduce the chances of becoming the victim of allowance exploits."
     },
     "risks": {
       "heading": "Risks of allowances",
@@ -18,7 +18,7 @@
     },
     "sponsors": {
       "heading": "Sponsors",
-      "paragraph_1": "To keep Revoke.cash free, we rely on donations and sponsorships for revenue. If you want to support us with a monthly sponsorship, please reach out through <0>Twitter</0> and join the list of these awesome companies and individuals that have committed to a monthly sponsorship of Revoke.cash:"
+      "paragraph_1": "To keep ismywalletsafu free, we rely on donations and sponsorships for revenue. If you want to support us with a monthly sponsorship, please reach out through <0>Twitter</0> and join the list of these awesome companies and individuals that have committed to a monthly sponsorship of ismywalletsafu:"
     },
     "token_allowances": {
       "heading": "Token allowances",
