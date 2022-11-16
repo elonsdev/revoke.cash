@@ -94,7 +94,7 @@ const TokenList = ({ tokenStandard, transferEvents, approvalEvents, approvalForA
     .filter((token) => settings.includeTokensWithoutBalances || !hasZeroBalance(token))
     .map((token) => <Token key={token.contract.address} token={token} />);
 
-  return <div className="flex flex-wrap w-[1250px] mx-auto justify-center">{tokenComponents}</div>;
+  return <div className="flex flex-wrap lg-w-[1250px] mx-auto justify-center">{tokenComponents}</div>;
 };
 
 export default TokenList;

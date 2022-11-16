@@ -22,7 +22,7 @@ const About: NextPage = () => {
           maxWidth: '800px',
           margin: 'auto',
         }}
-        className="pt-12"
+        className="pt-12 px-4"
       >
         <Link href="./">
           <a className="bg-green-500 mb-8 text-center rounded w-[200px] mx-auto py-2 text-black">BACK TO HOME</a>

@@ -8,7 +8,7 @@ const DashboardHeader = () => {
   const { tokenMapping, settings, setSettings } = useAppContext();
 
   return (
-    <div className="flex flex-col justify-center h-[350px] mt-12">
+    <div className="mx-4 flex flex-col justify-center h-[350px] mt-12">
       <h2 className="text-6xl mx-auto mb-2 font-CircularMedium">is my wallet safu? 😅</h2>
       <AddressInput />
       <TokenStandardSelection

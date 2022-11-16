@@ -16,7 +16,7 @@ const ConnectButton = () => {
   const buttonTextLoading = account ? t('common:buttons.disconnecting') : t('common:buttons.connecting');
 
   return (
-    <InputGroup className=" flex justify-center items-center bg-zinc-800 rounded-xl ">
+    <InputGroup className="text-sm md:text-lg flex justify-center items-center bg-zinc-800 rounded-xl ">
       <ChainSelectDropdown />
 
       {account && (
@@ -26,7 +26,7 @@ const ConnectButton = () => {
       )}
       <InputGroup.Append style={{ marginLeft: account ? -1 : 0 }}>
         <Button
-          className="bg-green-500 h-[42px] w-[150px] mx-auto rounded-r-xl py-2 text-center text-black font-extrabold"
+          className="bg-green-500 h-[45px] w-[100px] md:w-[130px] mx-auto rounded-r-xl py-2 text-center text-black font-extrabold"
           disabled={loading}
           variant="outline-primary"
           onClick={buttonAction}
