@@ -7,7 +7,10 @@ interface Props {
 }
 
 const ChainLogo = ({ chainId, size }: Props) => (
-  <Logo src={getChainLogo(chainId)} alt={getChainName(chainId)} size={size} />
+  <div className="flex mt-2 mx-2">
+    <Logo src={getChainLogo(chainId)} alt={getChainName(chainId)} size={size} />
+    <p className="text-zinc-300 ml-1">{getChainName(chainId)}</p>
+  </div>
 );
 
 export default ChainLogo;

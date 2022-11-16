@@ -33,7 +33,7 @@ const Allowance = ({ allowance, token, onRevoke }: Props) => {
   }
 
   return (
-    <Form inline className="Allowance">
+    <Form inline className="Allowance my-2">
       <AllowanceDisplay token={token} allowance={allowance} updatedAmount={updatedAmount} spenderName={spenderName} />
       <AllowanceControls revoke={revoke} update={update} id={`${token.contract.address}-${allowance.spender}`} />
     </Form>

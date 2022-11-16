@@ -34,7 +34,7 @@ const Token = ({ token }: Props) => {
   if (!settings.includeTokensWithoutAllowances && hasNoAllowances) return null;
 
   return (
-    <div className="Token">
+    <div className="m-4 py-8 px-4 rounded bg-zinc-900 w-[250px] flex flex-col justify-center">
       <TokenBalance token={token} />
       <AllowanceList token={token} allowances={allowances} onRevoke={onRevoke} />
     </div>

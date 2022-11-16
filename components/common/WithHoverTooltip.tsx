@@ -11,6 +11,7 @@ const WithHoverTooltip = ({ tooltip, children }: Props) => (
   <div style={{ position: 'relative' }}>
     <OverlayTrigger placement="auto" overlay={tooltip}>
       <div
+        className=""
         style={{
           position: 'absolute',
           top: '0',

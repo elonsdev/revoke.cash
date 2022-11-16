@@ -25,17 +25,10 @@ const AllowanceDisplay = ({ allowance, token, updatedAmount, spenderName }: Prop
     // Display separate spans for the regular and shortened versions of the spender address
     // The correct one is selected using CSS media-queries
     <Form.Label className="AllowanceText">
-      <span className="only-mobile-inline">
+      <span className="only-mobile-inline text-red-500">
         <Trans
           i18nKey={i18nKey}
           values={{ amount, tokenId, spender: shortenedSpenderDisplay }}
-          components={[<a className="monospace" href={explorerUrl} />]}
-        />
-      </span>
-      <span className="only-desktop-inline">
-        <Trans
-          i18nKey={i18nKey}
-          values={{ amount, tokenId, spender: spenderDisplay }}
           components={[<a className="monospace" href={explorerUrl} />]}
         />
       </span>

@@ -4,11 +4,14 @@ import DashboardHeader from './header/DashboardHeader';
 
 const Dashboard = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-      <ConnectSection />
-      <div className="Dashboard">
+    <div className="justify-center" style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+      <div className="Dashboard ">
+        <ConnectSection />
         <DashboardHeader />
-        <DashboardBody />
+
+        <div className="my-2 text-center mx-auto">
+          <DashboardBody />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { AppContextProvider } from 'lib/hooks/useAppContext';
 import { EthereumProvider } from 'lib/hooks/useEthereum';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 import Dashboard from './Dashboard';
 
 const SafeHydrate = ({ children }) => {

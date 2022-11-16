@@ -90,18 +90,20 @@ const DashboardBody = () => {
   }
 
   if (loading) {
-    return <ClipLoader css="margin: 10px;" size={40} color={'#000'} loading={loading} />;
+    return <ClipLoader css="margin: 10px" size={40} color={'#171717'} loading={loading} />;
   }
 
   if (error) return <Error error={error} />;
 
   return (
-    <TokenList
-      tokenStandard={settings.tokenStandard}
-      transferEvents={transferEvents}
-      approvalEvents={approvalEvents}
-      approvalForAllEvents={settings.tokenStandard === 'ERC20' ? [] : approvalForAllEvents}
-    />
+    <div className=" p-2 text-center mx-auto">
+      <TokenList
+        tokenStandard={settings.tokenStandard}
+        transferEvents={transferEvents}
+        approvalEvents={approvalEvents}
+        approvalForAllEvents={settings.tokenStandard === 'ERC20' ? [] : approvalForAllEvents}
+      />
+    </div>
   );
 };
 

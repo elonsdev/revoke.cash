@@ -1,5 +1,4 @@
 import useTranslation from 'next-translate/useTranslation';
-import Image from 'next/image';
 import Link from 'next/link';
 import NavLink from './NavLink';
 
@@ -9,7 +8,7 @@ const Header = () => {
   return (
     <>
       <div
-        className="Header"
+        className="max-w-[1000px] mx-auto py-4"
         style={{
           display: 'flex',
           flexDirection: 'column',
@@ -19,31 +18,15 @@ const Header = () => {
           marginBottom: '10px',
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'start',
-            gap: '2px',
-          }}
-        >
+        <div className="flex justify-between">
+          <Link href="/">
+            <a>
+              <h1 className="text-4xl font-CircularMedium">😅 </h1>
+            </a>
+          </Link>
           <div>
-            <Link href="/">
-              <a>
-                <Image
-                  className="logo"
-                  src="/assets/images/revoke.svg"
-                  alt="Revoke.cash logo"
-                  height="81"
-                  width="400"
-                />
-              </a>
-            </Link>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px' }}>
             <NavLink to="/about" text={t('common:nav.about')} matchToHighlight="about" />
             <NavLink to="/faq" text={t('common:nav.faq')} matchToHighlight="faq" />
-            <NavLink to="/extension" text={t('common:nav.extension')} matchToHighlight="extension" />
           </div>
         </div>
       </div>

@@ -14,19 +14,7 @@ const NavLink = ({ to, text, matchToHighlight }: Props) => {
 
   return (
     <Link href={to}>
-      <a
-        style={{
-          color: textColor,
-          textTransform: 'uppercase',
-          fontFamily: 'Futura Condensed',
-          textDecoration: 'none',
-          fontWeight: 'bold',
-          fontStyle: 'oblique',
-          fontSize: '18px',
-        }}
-      >
-        {text}
-      </a>
+      <a className="mx-4">{text}</a>
     </Link>
   );
 };

@@ -5,12 +5,12 @@ export const defaultSEO = {
     url: 'https://revoke.cash/',
     images: [
       {
-        url: 'https://revoke.cash/assets/images/revoke-card.png',
+        url: 'http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/smiling-face-with-open-mouth-and-cold-sweat.png',
         width: 1600,
         height: 900,
       },
     ],
-    site_name: 'Revoke.cash',
+    site_name: 'ismywalletpwned',
     type: 'website',
   },
   twitter: {

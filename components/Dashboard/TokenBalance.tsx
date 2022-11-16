@@ -13,8 +13,12 @@ const TokenBalance = ({ token }: Props) => {
   const explorerUrl = `${getChainExplorerUrl(selectedChainId)}/address/${token.contract.address}`;
 
   return (
-    <div className="TokenBalance">
-      <a href={explorerUrl} style={{ color: 'black' }}>
+    <div className="TokenBalance ">
+      <a
+        className="mx-auto text-center flex flex-col justify-center items-center "
+        href={explorerUrl}
+        style={{ color: 'white' }}
+      >
         <TokenLogo src={token.icon} alt={token.symbol} />
         {getBalanceText(token.symbol, token.balance, (token as Erc20TokenData).decimals)}
       </a>

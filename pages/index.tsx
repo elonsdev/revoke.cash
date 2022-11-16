@@ -15,7 +15,7 @@ const App: NextPage = () => {
 
   return (
     <>
-      <NextSeo {...defaultSEO} title={t('common:meta.title')} description={t('common:meta.description')} />
+      <NextSeo {...defaultSEO} title={'ismywalletpwned'} description={t('common:meta.description')} />
       <DashboardWrapper />
     </>
   );

@@ -18,7 +18,7 @@ const UpdateControls = ({ disabled, update }: Props) => {
       <Form.Control
         type="text"
         size="sm"
-        className="NewAllowance"
+        className="NewAllowance w-[150px] text-center bg-zinc-700 text-zinc-50"
         value={value}
         onChange={(event) => {
           setValue(event.target.value);

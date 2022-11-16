@@ -81,7 +81,11 @@ const TokenList = ({ tokenStandard, transferEvents, approvalEvents, approvalForA
   if (error) return <Error error={error} />;
 
   if (tokens.length === 0) {
-    return <div className="TokenList">No token balances</div>;
+    return (
+      <div className=" flex justify-center">
+        You have no token balances so your wallet is <span className="text-green-500 ml-1"> SAFU!</span>
+      </div>
+    );
   }
 
   const tokenComponents = tokens
@@ -90,7 +94,7 @@ const TokenList = ({ tokenStandard, transferEvents, approvalEvents, approvalForA
     .filter((token) => settings.includeTokensWithoutBalances || !hasZeroBalance(token))
     .map((token) => <Token key={token.contract.address} token={token} />);
 
-  return <div className="TokenList">{tokenComponents}</div>;
+  return <div className="flex flex-wrap w-[1250px] mx-auto justify-center">{tokenComponents}</div>;
 };
 
 export default TokenList;

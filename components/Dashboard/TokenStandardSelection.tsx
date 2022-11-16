@@ -20,20 +20,21 @@ const TokenStandardSelection = ({ tokenStandard, setTokenStandard }: Props) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
+      className="mt-6"
     >
-      <div>{t('dashboard:controls.tokens')}</div>
+      <div className="font-CircularMedium mr-2">{t('dashboard:controls.tokens')}</div>
       <div>
         <Switch
           checked={tokenStandard === 'ERC721'}
           onChange={(checked: boolean) => setTokenStandard(checked ? 'ERC721' : 'ERC20')}
-          onColor="#000"
-          offColor="#000"
+          offColor="22c55d"
+          onColor="22c55d"
           checkedIcon={false}
           uncheckedIcon={false}
           activeBoxShadow="0 0 2px 3px #aaa"
         />
       </div>
-      <div>{t('dashboard:controls.nfts')}</div>
+      <div className="font-CircularMedium ml-2">{t('dashboard:controls.nfts')}</div>
     </div>
   );
 };

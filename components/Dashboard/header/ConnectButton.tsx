@@ -16,17 +16,21 @@ const ConnectButton = () => {
   const buttonTextLoading = account ? t('common:buttons.disconnecting') : t('common:buttons.connecting');
 
   return (
-    <InputGroup style={{ width: 'fit-content' }}>
-      <InputGroup.Prepend>
-        <ChainSelectDropdown />
-      </InputGroup.Prepend>
+    <InputGroup className=" flex justify-center items-center bg-zinc-800 rounded-xl ">
+      <ChainSelectDropdown />
+
       {account && (
-        <InputGroup.Text style={{ borderRadius: 0, borderColor: 'black' }}>
+        <InputGroup.Text className="mx-2" style={{ borderRadius: 0, borderColor: 'black' }}>
           {domainName ?? shortenAddress(account)}
         </InputGroup.Text>
       )}
       <InputGroup.Append style={{ marginLeft: account ? -1 : 0 }}>
-        <Button disabled={loading} variant="outline-primary" onClick={buttonAction}>
+        <Button
+          className="bg-green-500 h-[42px] w-[150px] mx-auto rounded-r-xl py-2 text-center text-black font-extrabold"
+          disabled={loading}
+          variant="outline-primary"
+          onClick={buttonAction}
+        >
           {loading ? buttonTextLoading : buttonText}
         </Button>
       </InputGroup.Append>

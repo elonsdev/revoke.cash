@@ -33,26 +33,34 @@ const AllowanceControls = ({ revoke, update, id }: Props) => {
   const revokeButton = <RevokeButton revoke={revoke} disabled={disabled} />;
   const updateControls = <UpdateControls update={update} disabled={disabled} />;
   const controls = (
-    <div style={{ display: 'flex' }}>
+    <div className=" bg-green-500 w-[150px] mx-auto mt-2 rounded-xl py-2 text-center text-black font-extrabold">
       {revokeButton}
       {update && updateControls}
     </div>
   );
 
   if (!isConnected) {
-    const tooltip = <Tooltip id={`revoke-${id}`}>{t('dashboard:controls.tooltips.connect_wallet')}</Tooltip>;
+    const tooltip = (
+      <Tooltip className="text-white bg-black p-2 rounded-lg mb-2" id={`revoke-${id}`}>
+        {t('dashboard:controls.tooltips.connect_wallet')}
+      </Tooltip>
+    );
     return <WithHoverTooltip tooltip={tooltip}>{controls}</WithHoverTooltip>;
   }
 
   if (!isConnectedAddress) {
-    const tooltip = <Tooltip id={`revoke-${id}`}>{t('dashboard:controls.tooltips.connected_account')}</Tooltip>;
+    const tooltip = (
+      <Tooltip className="text-white bg-black p-2 rounded-lg mb-2" id={`revoke-${id}`}>
+        {t('dashboard:controls.tooltips.connected_account')}
+      </Tooltip>
+    );
     return <WithHoverTooltip tooltip={tooltip}>{controls}</WithHoverTooltip>;
   }
 
   if (needsToSwitchChain && !canSwitchChain) {
     const chainName = getChainName(selectedChainId);
     const tooltip = (
-      <Tooltip id={`switch-${id}`}>
+      <Tooltip className="text-white bg-black p-2 rounded-lg mb-2" id={`switch-${id}`}>
         <Trans i18nKey="dashboard:controls.tooltips.switch_chain" values={{ chainName }} components={[<strong />]} />
       </Tooltip>
     );

@@ -41,10 +41,10 @@ const AddressInput = () => {
   };
 
   return (
-    <div>
+    <div className="mt-4">
       <Form.Group style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
         <Form.Control
-          className="AddressInput text-center"
+          className="text-center bg-zinc-800 p-4 rounded-lg w-[550px] hover:scale-105 transition-all"
           placeholder={t('dashboard:address_input')}
           value={inputAddressOrName}
           onChange={handleFormInputChanged}
