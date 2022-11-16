@@ -15,7 +15,11 @@ const App: NextPage = () => {
 
   return (
     <>
-      <NextSeo {...defaultSEO} title={'ismywalletpwned'} description={t('common:meta.description')} />
+      <NextSeo
+        {...defaultSEO}
+        title={'ismywalletpwned'}
+        description={'Is your crypto wallet safu or have you given access to people and contracts you should not have?'}
+      />
       <DashboardWrapper />
     </>
   );

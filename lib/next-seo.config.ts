@@ -5,12 +5,12 @@ export const defaultSEO = {
     url: 'https://revoke.cash/',
     images: [
       {
-        url: 'http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/smiling-face-with-open-mouth-and-cold-sweat.png',
+        url: 'https://revoke.cash/assets/images/revoke-card.png',
         width: 1600,
         height: 900,
       },
     ],
-    site_name: 'ismywalletpwned',
+    site_name: 'is my wallet safu?',
     type: 'website',
   },
   twitter: {
