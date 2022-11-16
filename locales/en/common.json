@@ -1,6 +1,6 @@
 {
   "buttons": {
-    "connect": "Connect Wallet",
+    "connect": "Connect",
     "connecting": "Connecting...",
     "disconnect": "Disconnect",
     "disconnecting": "Disconnecting...",
